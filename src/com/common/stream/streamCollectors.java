@@ -32,7 +32,7 @@ public class streamCollectors {
         
         // sum
         Double collect4 = number.stream().collect(Collectors.averagingInt(x -> x));
-        System.out.println(collect4);
+        System.out.println("List: " + collect4);
         // Grouping elements
         List<String> st = Arrays.asList("Lisa","Mia","Anna","Alex","David","Jon","Tamme");
         Map<Integer, List<String>> stg1 = st.stream().collect(Collectors.groupingBy(String::length));
